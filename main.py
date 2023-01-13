@@ -8,9 +8,7 @@ def printStat():
     Lines = f.readlines()
     count = 0;
     for line in Lines:
-        count += 1
         numStr.append(int(line))
-
     min = numStr
     min.sort()
     print(f'mean: {sum(numStr) / len(numStr)}')
